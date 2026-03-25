@@ -26,7 +26,7 @@ void generateData(vector<Flight>& flights, int size){
         f.origin_airport = airports[rand() % 6];
         f.destination_airport = airports[rand() % 6];
 
-        flight.push_back(f);
+        flights.push_back(f);
     }
 }
 
