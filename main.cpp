@@ -29,12 +29,14 @@ int main() {
         cout << "3. Run Quick Sort" << endl;
         cout << "4. Compare performance" << endl;
         cout << "5. Exit" << endl;
+        cout << endl;
         cout << "Enter choice: " << endl;
         cin >> choice;
 
         if(choice == 1) {
             generateData(flights, 100000);
             cout << "Dataset loaded." << endl;
+            cout << endl;
         }
 
         else if(choice == 2) {
@@ -50,6 +52,7 @@ int main() {
                 cout << "Time required to complete merge sort: "
                      << duration_cast<milliseconds>(end - start).count()
                      << " ms" << endl;
+                cout << endl;
             }
         }
         else if(choice == 3) {
@@ -65,6 +68,7 @@ int main() {
                 cout << "Time required to complete quick sort: "
                      << duration_cast<milliseconds>(end - start).count()
                      << " ms" << endl;
+                cout << endl;
             }
         }
         else if(choice == 4) {
@@ -83,6 +87,7 @@ int main() {
                 quickSort(data2, 0, data2.size() - 1);
                 auto end2 = high_resolution_clock::now();
 
+                cout << endl;
                 cout << "Merge Sort Time: "
                      << duration_cast<milliseconds>(end1 - start1).count()
                      << " ms" << endl;
@@ -90,6 +95,7 @@ int main() {
                 cout << "Quick Sort Time: "
                      << duration_cast<milliseconds>(end2 - start2).count()
                      << " ms" << endl;
+                cout << endl;
             }
         }
         else if(choice == 5) {
